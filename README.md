@@ -23,7 +23,8 @@ This project demonstrates how to connect **Amazon Bedrock Knowledge Base** (with
 
 📸 *Screenshot:*  
 
-![Screenshot: S3 Bucket with documents](images/s3_docs.png)
+![Screenshot: S3 Bucket with documents](images/1.png)
+![Screenshot: S3 Bucket with documents](images/2.png)
 
 ## 2. Create a Vector Store  
 
@@ -32,7 +33,8 @@ This project demonstrates how to connect **Amazon Bedrock Knowledge Base** (with
 - Use the default **dimension size: 1024**.  
 
 📸 Screenshot:  
-![Screenshot: Vector bucket with index](images/vector_index.png)
+![Screenshot: Vector bucket with index](images/3.png)
+![Screenshot: Vector bucket with index](images/4.png)
 
 
 ## 3. Create a Knowledge Base  
@@ -44,7 +46,7 @@ This project demonstrates how to connect **Amazon Bedrock Knowledge Base** (with
 - Sync the documents → you should see a **success ✅** message.  
 
 📸 Screenshot:  
-![Screenshot: Knowledge Base setup](images/kb_setup.png)
+![Screenshot: Knowledge Base setup](images/5.png)
 
 
 ## 4. Create IAM Role for Lambda  
@@ -62,7 +64,7 @@ This allows Lambda to:
 - Query **Amazon Bedrock**  
 
 📸 Screenshot:  
-![Screenshot: IAM role with policies](images/iam_role.png)
+![Screenshot: IAM role with policies](images/6.png)
 
 
 ## 5. Create AWS Lambda Function  
@@ -73,7 +75,8 @@ This allows Lambda to:
 - Assign the **IAM role** you created in the previous step.  
 
 📸 Screenshot:  
-![Screenshot: Lambda function created](images/lambda_created.png)
+![Screenshot: Lambda function created](images/7.png)
+![Screenshot: Lambda function created](images/8.png)
 
 ### Paste the Lambda Code  
 
@@ -143,6 +146,8 @@ def lambda_handler(event, context):
 }
 ```
 
+![Screenshot: Lambda function created](images/9.png)
+
 ## 🧾 Requirements  
 
 - Python 3.11+  
@@ -165,8 +170,6 @@ After testing, delete the following resources to avoid unnecessary charges:
 - **Lambda function** (`vectorlambdasearch1`)  
 - **IAM role** created for Lambda  
 
-📸 Screenshot:  
-![Screenshot: Deleting resources](images/cleanup.png)
 
 ---
 
