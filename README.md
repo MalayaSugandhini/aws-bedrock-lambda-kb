@@ -5,7 +5,6 @@ This project demonstrates how to connect **Amazon Bedrock Knowledge Base** (with
 ---
 
 ## Project Overview  
-We will:  
 1. Upload documents to an **S3 bucket**.  
 2. Create an **S3 Vector Bucket** with an index.  
 3. Set up a **Knowledge Base** in Amazon Bedrock.  
