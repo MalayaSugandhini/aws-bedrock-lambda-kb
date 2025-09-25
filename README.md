@@ -1,10 +1,10 @@
-# 🚀 AWS Bedrock + Lambda + Knowledge Base (Vector Store)  
+# AWS Bedrock + Lambda + Knowledge Base (Vector Store)  
 
 This project demonstrates how to connect **Amazon Bedrock Knowledge Base** (with S3 Vectors) to an **AWS Lambda function**, allowing you to query your documents with RAG (Retrieval-Augmented Generation).  
 
 ---
 
-## 📌 Project Overview  
+## Project Overview  
 We will:  
 1. Upload documents to an **S3 bucket**.  
 2. Create an **S3 Vector Bucket** with an index.  
@@ -23,7 +23,7 @@ We will:
 - Upload your PDF/Docs (e.g., *Why Bedrock.pdf*).  
 
 📸 *Screenshot:*  
-```md
+
 ![Screenshot: S3 Bucket with documents](images/s3_docs.png)
 
 ## 2. Create a Vector Store  
@@ -130,7 +130,7 @@ def lambda_handler(event, context):
             "body": json.dumps({"error": str(e)})
         }
 
-
+```
 
 ## 6. Test the Lambda  
 
