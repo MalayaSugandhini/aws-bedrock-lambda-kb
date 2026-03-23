@@ -175,4 +175,4 @@ After testing, delete the following resources to avoid unnecessary charges:
 
 ## 🙌 Credits  
 
-This project was built step-by-step while learning **Amazon Bedrock, S3 Vectors, IAM, and Lambda integration**.
+**This project demonstrates an enterprise-grade document intelligence system enabling natural language querying over knowledge bases using AWS-native GenAI services.**
